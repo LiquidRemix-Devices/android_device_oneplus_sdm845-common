@@ -40,6 +40,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpm.feature=9
 
+# Fling
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.min.fling_velocity=150 \
+    ro.max.fling_velocity=20000
+
 # IOP
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.iop.enable_prefetch_ofr=1 \
