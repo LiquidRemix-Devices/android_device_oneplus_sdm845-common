@@ -74,6 +74,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.manager@1.0-java \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/idc/fpc1020.idc:system/usr/idc/fpc1020.idc \
