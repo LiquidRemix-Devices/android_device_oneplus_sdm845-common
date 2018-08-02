@@ -43,6 +43,9 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_BOOTLOADER_BOARD_NAME := sdm845
 TARGET_NO_BOOTLOADER := true
 
+# Use Snapdragon LLVM, if available
+TARGET_USE_SDCLANG := true
+
 # Compile bionic with optimization
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
