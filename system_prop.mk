@@ -30,6 +30,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.gfx_ubwc_disable=0 \
     debug.sf.latch_unsignaled=1 \
+    persist.debug.force_burn_in=true \
     sdm.debug.prefersplit=1
 
 # Fling
