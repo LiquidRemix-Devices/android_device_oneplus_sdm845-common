@@ -174,3 +174,8 @@ PRODUCT_PACKAGES_DEBUG += \
 # WFD
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# Custom op6 healthd
+PRODUCT_PACKAGES += android.hardware.health@2.0-service.oneplus6
+DEVICE_FRAMEWORK_MANIFEST_FILE += \
+    system/libhidl/vintfdata/manifest_healthd_exclude.xml
