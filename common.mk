@@ -133,6 +133,10 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
+# WCNSS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/etc/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini
+
 # WFD
 PRODUCT_BOOT_JARS += \
     WfdCommon
