@@ -1,0 +1,11 @@
+import /init.performance_profiles.rc
+
+on property:sys.boot_completed=1
+write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/min_clock_mhz 180
+write /sys/module/cpu_input_boost/parameters/remove_input_boost_freq_lp 300000
+
+setprop fku.profiles 1
+
+exec u:r:magisk:s0 root root -- /init.profile0.sh
+exec u:r:magisk:s0 root root -- /init.special_power.sh
+

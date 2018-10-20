@@ -56,8 +56,22 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    init.performance_profiles.rc \
     init.qcom.rc \
-    init.recovery.qcom.rc
+    init.qcom.test.rc \
+    init.recovery.qcom.rc \
+    init.smurf.rc \
+    init.spectrum.rc
+
+# Common kernel scripts
+PRODUCT_PACKAGES += \
+    init.profile0.sh \
+    init.profile1.sh \
+    init.profile2.sh \
+    init.profile3.sh \
+    init.special_power.sh \
+    init.smurf.sh \
+    init.spectrum.sh
 
 # Device
 PRODUCT_PACKAGES += \
