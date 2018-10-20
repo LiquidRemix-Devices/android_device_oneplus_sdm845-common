@@ -69,12 +69,14 @@ PRODUCT_PACKAGES += \
     init.qcom.test.rc \
     init.recovery.qcom.rc \
     init.smurf.rc \
-    init.spectrum.rc \
-    init.smurf.post_boot.rc
+    init.spectrum.rc
 
 # Common kernel scripts
 PRODUCT_PACKAGES += \
-    init.smurf.post_boot.sh \
+    init.profile0.sh \
+    init.profile1.sh \
+    init.profile2.sh \
+    init.profile3.sh \
     init.special_power.sh \
     init.spectrum.sh
 
