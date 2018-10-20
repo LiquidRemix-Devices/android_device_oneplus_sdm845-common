@@ -33,6 +33,8 @@ write /sys/block/sde/queue/read_ahead_kb 128;
 write /sys/block/sde/queue/iostats 0;
 write /sys/block/sde/queue/nr_requests 128;
 
+write /proc/sys/vm/swappiness 65
+
 sleep 10;
 
 QSEECOMD=`pidof qseecomd`

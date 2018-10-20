@@ -42,6 +42,7 @@ function writepid_sbg() {
 	write /sys/module/cpu_input_boost/parameters/input_boost_freq_hp 902400;
 	write /sys/module/cpu_input_boost/parameters/input_boost_freq_lp 1056000;
 	write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor pixel_smurfutil;
+	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/pl 1;
 	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/bit_shift1 6;
 	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/bit_shift1_2 5;
 	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/bit_shift2 6;
@@ -52,6 +53,7 @@ function writepid_sbg() {
 	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/up_rate_limit_us 0;
 	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/down_rate_limit_us 20000;
 	write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor pixel_smurfutil;
+	write /sys/devices/system/cpu/cpu4/cpufreq/pixel_smurfutil/pl 1;
 	write /sys/devices/system/cpu/cpu4/cpufreq/pixel_smurfutil/bit_shift1 6;
 	write /sys/devices/system/cpu/cpu4/cpufreq/pixel_smurfutil/bit_shift1_2 5;
 	write /sys/devices/system/cpu/cpu4/cpufreq/pixel_smurfutil/bit_shift2  6;
@@ -63,7 +65,8 @@ function writepid_sbg() {
 	write /sys/devices/system/cpu/cpu4/cpufreq/pixel_smurfutil/down_rate_limit_us 20000;
 	write /sys/module/msm_performance/parameters/touchboost 1;
 	write /sys/module/adreno_idler/parameters/adreno_idler_active Y;
-	write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/min_clock_mhz 180;
+	write /sys/module/workqueue/parameters/power_efficient Y;
+	write /sys/devices/platform/soc/5000000.qcom,kgsl-3d0/kgsl/kgsl-3d0/min_clock_mhz 257;
 	write /sys/devices/system/cpu/cpu0/cpufreq/pixel_smurfutil/hispeed_freq 1228800;
 	write /sys/devices/system/cpu/cpu4/cpufreq/pixel_smurfutil/hispeed_freq 1536000;
 
