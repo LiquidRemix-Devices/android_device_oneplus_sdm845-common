@@ -22,7 +22,7 @@ function writepid_sbg() {
 ################################################################################
 
 {
-	sleep 10;
+	sleep 15;
 	write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor pixel_smurfutil;
 	write /sys/devices/system/cpu/cpufreq/policy4/scaling_governor pixel_smurfutil;
 	write /sys/devices/system/cpu0/cpufreq/scaling_governor pixel_smurfutil;

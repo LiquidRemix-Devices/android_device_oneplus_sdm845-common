@@ -22,29 +22,16 @@ function writepid_sbg() {
 ################################################################################
 
 {
-sleep 10;
+sleep 25;
 
-write /proc/sys/vm/swappiness 5;
-write /proc/sys/vm/drop_caches 3;
-write /proc/sys/vm/drop_caches 0;
-write /proc/sys/vm/dirty_ratio 50;
-write /proc/sys/vm/oom_dump_tasks 0;
-write /proc/sys/vm/stat_interval 60;
-write /proc/sys/fs/lease-break-time 10;
-write /proc/sys/vm/min_free_kbytes 7168;
-write /proc/sys/vm/vfs_cache_pressure 20;
-write /proc/sys/vm/dirty_background_ratio 2;
-write /proc/sys/vm/dirty_expire_centisecs 6000;
-write/proc/sys/vm/dirty_writeback_centisecs 2000;
-
-write /sys/block/sda/queue/scheduler zen;
-write /sys/block/sda/queue/read_ahead_kb 512;
+write /sys/block/sda/queue/scheduler cfq;
+write /sys/block/sda/queue/read_ahead_kb 128;
 write /sys/block/sda/queue/iostats 0;
-write /sys/block/sda/queue/nr_requests 32;
-write /sys/block/sde/queue/scheduler zen;
-write /sys/block/sde/queue/read_ahead_kb 512;
+write /sys/block/sda/queue/nr_requests 128;
+write /sys/block/sde/queue/scheduler cfq;
+write /sys/block/sde/queue/read_ahead_kb 128;
 write /sys/block/sde/queue/iostats 0;
-write /sys/block/sde/queue/nr_requests 32;
+write /sys/block/sde/queue/nr_requests 128;
 
 sleep 10;
 
