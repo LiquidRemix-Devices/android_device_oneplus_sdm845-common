@@ -132,6 +132,7 @@ on boot
     chmod 0660 /sys/class/power_supply/usb/otg_switch
 
     setprop vendor.camera.aux.packagelist com.oneplus.camera
+    setprop persist.vendor.dpm.feature 11
 
     mkdir /persist/battery 0770 system system
 

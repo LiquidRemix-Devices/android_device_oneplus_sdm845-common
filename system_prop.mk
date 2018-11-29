@@ -62,6 +62,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.ignore_dom_time=10 \
+    persist.vendor.radio.add_power_save=false \
     ro.telephony.default_network=22,22
 
 # Touchscreen
