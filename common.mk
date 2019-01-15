@@ -54,6 +54,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
 
+# RemoveNotchOverlay
+PRODUCT_PACKAGES += \
+	RemoveNotchOverlay
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.performance_profiles.rc \
