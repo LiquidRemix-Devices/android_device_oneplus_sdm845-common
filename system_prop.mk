@@ -95,3 +95,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0
+
+# Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.liquid.maintainer=liquid0624
